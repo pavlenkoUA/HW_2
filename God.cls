@@ -1,7 +1,3 @@
-/**
- * Created by me on 7/9/2022.
- */
-
 public class God{
     public Human createMan(String n){
         return new Man(n);
