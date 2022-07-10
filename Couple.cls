@@ -9,19 +9,25 @@ public class Couple {
     }
 
     public void makeSex(){
-        Boolean haveSex = true;
+        haveSex = true;
     }
 
     public Man getBoy(){
-        String babyName = mom.getName() + dad.getName();
-        haveSex = false;
-        return new Man(babyName);
-
+        if(haveSex) {
+            String babyName = mom.getName() + dad.getName();
+            haveSex = false;
+            return new Man(babyName);
+        } else {
+            throw new HandledException('cant do getBoy without Sex');
+        }
     }
-    public Woman getGirl(){
-        String babyName = mom.getName() + dad.getName();
-        haveSex = false;
-        return new Woman(babyName);
-
+    public Woman getGirl() {
+        if (haveSex) {
+            String babyName = mom.getName() + dad.getName();
+            haveSex = false;
+            return new Woman(babyName);
+        } else {
+            throw new HandledException('cant do getGirl without Sex');
+        }
     }
 }
