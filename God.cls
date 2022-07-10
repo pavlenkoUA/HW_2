@@ -1,14 +1,14 @@
 public class God{
-    public Human createMan(String n){
+    public Man createMan(String n){
         return new Man(n);
     }
-    public Human createMan(){
+    public Man createMan(){
         return new Man('Adam');
     }
-    public Human createWoman(String n){
+    public Woman createWoman(String n){
         return new Woman(n);
     }
-    public Human createWoman(){
+    public Woman createWoman(){
         return new Woman('Eva');
     }
 }

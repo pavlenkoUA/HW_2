@@ -8,7 +8,7 @@ public class Couple {
         dad = y;
     }
 
-    public static void makeSex(){
+    public void makeSex(){
         Boolean haveSex = true;
     }
 
