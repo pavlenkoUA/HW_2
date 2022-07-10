@@ -12,10 +12,16 @@ public class Couple {
         Boolean haveSex = true;
     }
 
-    public Human getBaby(){
+    public Man getBoy(){
         String babyName = mom.getName() + dad.getName();
         haveSex = false;
         return new Man(babyName);
+
+    }
+    public Woman getGirl(){
+        String babyName = mom.getName() + dad.getName();
+        haveSex = false;
+        return new Woman(babyName);
 
     }
 }
